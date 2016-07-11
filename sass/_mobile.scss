@@ -119,9 +119,10 @@
 		width: 90%;
 	}
 	.form_thanks{
+		background:red;
 		background:#f2f5da;
 	}
-}
+} 
 
 @include mq($max-width: 380px) {
 	.phone, .feedback{

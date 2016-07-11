@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../fonts/PFDinDisplayPro/stylesheet.css);
 @import url(../fonts/Philosopher/stylesheet.css);
 @font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.6.3"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
@@ -1620,6 +1621,58 @@ header { position: relative; padding: 5px 0; }
 
 .thanks_text strong { display: block; font-size: 25px; }
 
+.container.no_margins { margin: 0; }
+
+.section_404 { min-height: 633px; background: url(../img/404_bg.png) left top no-repeat; color: #122539; }
+
+.section_404 img.text_404 { padding-top: 111px; padding-bottom: 70px; margin: 0 auto; display: block; }
+
+.section_404 h1 { font-size: 35px; font-family: PFDinDisplayPro Medium; font-weight: 500; line-height: 25px; padding-bottom: 17px; text-align: center; }
+
+.section_404 p { font-size: 25px; font-family: PFDinDisplayPro Light; font-weight: 300; line-height: 45px; padding-bottom: 38px; text-align: center; }
+
+.section_404 .to_main { color: white; font-family: PFDinDisplayPro Light; font-size: 30px; font-weight: 400; line-height: 63px; width: 368px; height: 63px; background-color: #5389b8; background-image: -webkit-linear-gradient(bottom, #aabb18 0%, #bbcd21 100%); background-image: linear-gradient(to top, #aabb18 0%, #bbcd21 100%); border-radius: 31px; box-shadow: inset 0 -2px 0 rgba(1, 1, 1, 0.17); margin: 0 auto; text-decoration: none; display: block; text-align: center; }
+
+.breadcrumbs { padding: 0px 0 35px; font-family: PFDinDisplayPro Light; font-size: 18px; color: #463500; font-weight: 300; }
+
+.breadcrumbs ul li { display: inline; color: #f26611; }
+
+.breadcrumbs ul li:last-child:after { content: none; }
+
+.breadcrumbs ul li:after { content: ' › '; }
+
+.breadcrumbs a { color: #f26611; text-decoration: none; border-bottom: 1px #f26611 dotted; }
+
+.breadcrumbs a.active { color: #463500; border-bottom: 0px #f26611 dotted; }
+
+.product_info .product_img { text-align: left; float: left; padding: 0 30px 22px 0; }
+
+.product_info h1 { color: #363636; font-family: Philosopher; font-size: 40px; font-weight: 400; padding-bottom: 25px; }
+
+.product_info .price { position: relative; width: 230px; height: 45px; background-color: #f26611; background-image: -webkit-linear-gradient(bottom, #f26611 0%, #ff7a2a 100%); background-image: linear-gradient(to top, #f26611 0%, #ff7a2a 100%); border-radius: 22px; box-shadow: inset 0 -2px 0 rgba(1, 1, 1, 0.17); color: white; font-family: PFDinDisplayPro Light; line-height: 25px; font-size: 16px; font-weight: 300; text-decoration: none; display: inline-block; line-height: 45px; margin-right: 37px; }
+
+.product_info .price b { font-size: 18px; font-weight: 500; font-family: PFDinDisplayPro Medium; }
+
+.product_info .price span { overflow: hidden; margin-left: 31px; width: 135px; }
+
+.product_info .price span:after { position: absolute; top: 4px; right: 19px; width: 31px; height: 37px; content: url("../img/icon-basket.png"); border-left: 1px solid #e2691f; }
+
+.product_info .price-list { color: #08743b; font-family: PFDinDisplayPro Medium; font-size: 16px; font-weight: 400; line-height: 25px; border-bottom: 1px dotted #08743b; text-decoration: none; }
+
+.product_info hr { height: 1px; opacity: 1; border: 0px solid red; background: #e6e6e6; margin: 20px 0; }
+
+.product_info p { padding-bottom: 13px; color: #363636; font-family: PFDinDisplayPro Light; font-size: 18px; line-height: 25px; font-weight: 300; }
+
+.product_info p b { font-weight: 500; text-transform: uppercase; font-family: PFDinDisplayPro Medium; }
+
+.product_info .certificates { text-align: center; }
+
+.product_info .certificates .title { color: black; font-family: Philosopher; font-size: 25px; font-weight: 400; text-align: center; padding: 4px 0 26px; }
+
+.product_info .certificates a img { display: inline-block; margin-right: 33px; }
+
+.product_info .certificates a:last-child img { margin-right: 0; }
+
 @media only screen and (max-width: 1200px) { .wrapper { width: auto; overflow: hidden; }
   .bnr img { width: 100%; } }
 
@@ -1649,7 +1702,7 @@ header { position: relative; padding: 5px 0; }
   .form-input { margin: 5px; }
   .form-input, .error { width: auto; text-align: center; }
   .form-btn .button { width: 90%; }
-  .form_thanks { background: #f2f5da; } }
+  .form_thanks { background: red; background: #f2f5da; } }
 
 @media only screen and (max-width: 380px) { .phone, .feedback { float: none; margin: auto; }
   .slogan { width: auto; } }
