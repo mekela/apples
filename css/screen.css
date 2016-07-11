@@ -1403,11 +1403,9 @@ h6 { font-size: 14px; }
 
 .button:hover { background: #fff; color: #bbcd21; border-color: #bbcd21; }
 
-.button:hover { background: #3cb0fd; background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db); background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
-
 input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea { width: 300px; height: 25px; box-sizing: border-box; padding: 0 5px; color: #000; font-size: 14px; font-family: "PFDinDisplayPro Light"; border: 1px solid #000; border-radius: 3px; resize: none; }
 
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, textarea:focus { box-shadow: 0 0 2px #99e6f9; }
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, textarea:focus { outline: none; }
 
 input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, input[type=password].red_input, input[type=date].red_input, input[type=url].red_input, textarea.red_input { box-shadow: 0 0 2px #ff2d50; background: #fdc4ce; }
 
@@ -1495,6 +1493,20 @@ header { position: relative; padding: 5px 0; }
 
 .top-menu > ul > li:hover > a:before, .top-menu > ul > li:hover + li > a:before { content: none; }
 
+.top-menu li:hover > ol { display: block; }
+
+.top-menu ol { position: absolute; left: 0; top: 49px; width: 100%; background: #fff; z-index: 50; border: 1px solid #ffed72; border-top: none; display: none; }
+
+.top-menu ol ol { left: 100%; top: -1px; }
+
+.top-menu ol li { display: block; border-top: #ffed72 1px solid; position: relative; }
+
+.top-menu ol li a { padding: 7px 0; display: block; text-decoration: none; color: #463500; font-size: 18px; text-align: center; }
+
+.top-menu ol li:hover > a { color: #f26611; text-decoration: underline; }
+
+.menu_trigger { display: none; }
+
 /*--------------------    main    --------------------*/
 .main { padding: 20px 0 45px 0; }
 
@@ -1576,4 +1588,68 @@ header { position: relative; padding: 5px 0; }
 .foot_right address { font-style: normal; font-size: 14px; padding: 12px 0 0 0; }
 
 /*--------------------    modal    --------------------*/
-.modal { position: relative; display: none; width: 400px; padding: 20px 20px; box-sizing: border-box; }
+.modal { position: relative; display: none; width: 360px; padding: 0px; box-sizing: border-box; overflow: hidden; border-radius: 9px; }
+
+.form-input, .error { width: 280px; margin: 0 auto; }
+
+.form-input { vertical-align: top; border: 1px solid #dadbdb; padding: 7px 9px; box-sizing: border-box; margin-bottom: 18px; }
+
+.form-input i { margin: 0 10px 0 0; color: #edd323; font-size: 20px; display: inline-block; height: 33px; line-height: 33px; }
+
+.form-input input { border-radius: 0; width: 220px; padding: 0 0 0 15px; height: 33px; color: #797979; font-size: 16px; display: inline-block; border: none; border-left: 1px solid #cccccc; }
+
+.form-input.error { border-color: #f33f50; }
+
+.form-input.error input { color: #f33f50; }
+
+.form-title { color: #363636; font-size: 25px; font-family: "Philosopher"; text-align: center; padding: 20px 0 15px 0; }
+
+.form-btn { margin-top: 20px; padding: 20px 0; text-align: center; background: #f2f5da; }
+
+.form-btn .button { width: 280px; height: 53px; text-transform: uppercase; box-shadow: inset 0 -2px 0 rgba(1, 1, 1, 0.17); }
+
+.form-btn .button:hover { box-shadow: inset 0 -2px 0 rgba(1, 1, 1, 0); }
+
+.error { font-size: 14px; color: #f33f50; }
+
+.thanks_modal { width: 525px; }
+
+.form_thanks { background: #f2f5da url(../img/success.png) no-repeat 11px center; padding: 40px 0; text-align: center; color: #f46915; font-size: 50px; font-family: "Philosopher"; }
+
+.thanks_text { padding: 25px 0 45px 0; text-align: center; color: #363636; font-size: 20px; }
+
+.thanks_text strong { display: block; font-size: 25px; }
+
+@media only screen and (max-width: 1200px) { .wrapper { width: auto; overflow: hidden; }
+  .bnr img { width: 100%; } }
+
+@media only screen and (max-width: 1000px) { header { text-align: center; }
+  .logo, .slogan, .header-right { display: inline-block; float: none; }
+  .header-right { padding: 20px 0; }
+  .foot_right { width: auto; float: none; position: relative; overflow: hidden; padding-left: 20px; } }
+
+@media only screen and (max-width: 900px) { .news_item.big { width: auto; float: none; }
+  .news_item { width: -webkit-calc(49% - 23px); width: calc(49% - 23px); } }
+
+@media only screen and (max-width: 768px) { .content_txt img.float_left { float: none !important; width: 100%; }
+  .news_item { width: -webkit-calc(49% - 23px); width: calc(49% - 23px); }
+  .foot_right { width: auto; float: none; position: relative; overflow: hidden; clear: both; text-align: center; }
+  .footer { text-align: center; }
+  .foot_left, .foot_menu { display: inline-block; float: none; } }
+
+@media only screen and (max-width: 700px) { .container { margin: 0 10px; }
+  .menu_trigger { text-align: center; display: block; font-size: 20px; text-transform: uppercase; padding: 15px 0; }
+  .top-menu ul { display: none; }
+  .top-menu li { display: block !important; width: 100% !important; border-top: 1px solid #bba318; }
+  .top-menu li ol { display: none; position: static; } }
+
+@media only screen and (max-width: 530px) { .slogan { padding-left: 0; margin-left: 0; border-left: none; }
+  .news_item { width: -webkit-calc(99% - 23px); width: calc(99% - 23px); }
+  .modal { width: auto; }
+  .form-input { margin: 5px; }
+  .form-input, .error { width: auto; text-align: center; }
+  .form-btn .button { width: 90%; }
+  .form_thanks { background: #f2f5da; } }
+
+@media only screen and (max-width: 380px) { .phone, .feedback { float: none; margin: auto; }
+  .slogan { width: auto; } }

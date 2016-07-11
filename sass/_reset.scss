@@ -99,7 +99,7 @@ h6{font-size:14px;}
 .button{
   @include button('');
   &:hover{
-    @include button_gradient_hover('');
+    //@include button_gradient_hover('');
   }
 }
 input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea{

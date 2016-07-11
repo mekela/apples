@@ -103,6 +103,50 @@ header{
 					.top-menu > ul > li:hover > a:before, .top-menu > ul > li:hover + li > a:before{
 						content: none;
 					}
+	.top-menu{
+		li:hover{
+			& > ol{
+				display: block;
+			}
+		}
+		ol{
+			position: absolute;
+			left: 0;
+			top: 49px;
+			width: 100%;
+			background:#fff;
+			z-index: 50;
+			border: 1px solid #ffed72;
+			border-top: none;
+			display: none;
+			ol{
+				left: 100%;
+				top: -1px;
+			}
+			li{
+				display: block;
+				border-top: #ffed72 1px solid;
+				position: relative;
+				a{
+					padding: 7px 0;
+					display: block;
+					text-decoration: none;
+					color: #463500;
+					font-size: 18px;
+					text-align: center;
+				}
+				&:hover{
+					& > a{
+						color: #f26611;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	.menu_trigger{
+		display: none;
+	}
 /*--------------------    main    --------------------*/
 .main{
 	padding: 20px 0 45px 0;
@@ -290,9 +334,92 @@ header{
 .modal{
 	position: relative;
 	display: none;
-	width: 400px;
-	padding: 20px 20px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	width: 360px;
+	padding: 0px;
 	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 9px;
 }
+	.form-input, .error{
+		width: 280px;
+		margin: 0 auto;
+	}
+		.form-input {
+			vertical-align: top;
+			border: 1px solid #dadbdb;
+			padding: 7px 9px;
+			box-sizing: border-box;
+			margin-bottom: 18px;
+			i{
+				margin: 0 10px 0 0;
+				color: #edd323;
+				font-size: 20px;
+				display: inline-block;
+				height: 33px;
+				line-height: 33px;
+			}
+			input{
+				border-radius: 0;
+				width: 220px;
+				padding: 0 0 0 15px;
+				height: 33px;
+				color: #797979;
+				font-size: 16px;
+				display: inline-block;
+				border: none;
+				border-left: 1px solid #cccccc;
+			}
+			&.error{
+				border-color: #f33f50;
+				input{
+					color: #f33f50;
+				}
+			}
+		}
+	.form-title{
+		color: #363636;
+		font-size: 25px;
+		font-family: $fontfamily;
+		text-align: center;
+		padding:20px 0 15px 0;
+	}
+	.form-btn{
+		margin-top: 20px;
+		padding: 20px 0;
+		text-align: center;
+		background:#f2f5da;
+		.button{
+			width: 280px;
+			height: 53px;
+			text-transform: uppercase;
+			box-shadow: inset 0 -2px 0 rgba(1,1,1,.17);
+			&:hover{
+				box-shadow: inset 0 -2px 0 rgba(1,1,1,.0);
+			}
+		}
+	}
+		.error{
+			font-size: 14px;
+			color: #f33f50;
+		}
+.thanks_modal{
+	width: 525px;
+}
+	.form_thanks{
+		background:#f2f5da url(../img/success.png) no-repeat  11px center;
+		padding: 40px 0;
+		text-align: center;
+		color: #f46915;
+		font-size: 50px;
+		font-family: $fontfamily;
+	}
+	.thanks_text{
+		padding: 25px 0 45px 0;
+		text-align: center;
+		color: #363636;
+		font-size: 20px;
+		strong{
+			display: block;
+			font-size: 25px;
+		}
+	}
