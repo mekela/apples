@@ -1544,7 +1544,7 @@ header { position: relative; padding: 5px 0; }
 
 .news_item section .more a { border-bottom: 1px dotted #f26611; margin: 0 4px 0 0; }
 
-.all_news { text-align: center; padding: 10px 0 0 0; }
+.all_news { text-align: center; padding-top: 10px; }
 
 .all_news a { position: relative; display: inline-block; background: #bbcd21; width: 100%; color: #fff; font-size: 18px; line-height: 40px; text-align: center; text-decoration: none; border: 1px solid #bbcd21; border-radius: 20px; outline: none; cursor: pointer; box-sizing: border-box; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; border-color: #fd7625; background: #fff; color: #fd7625; display: inline-block; width: 250px; font-size: 20px; }
 

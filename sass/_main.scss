@@ -221,7 +221,7 @@ header{
 		}
 	.all_news{
 		text-align: center;
-		padding: 10px 0 0 0;
+		padding-top: 10px;
 		a{
 			@include button('$button');
 			border-color: #fd7625;
@@ -234,7 +234,7 @@ header{
 	}
 /*--------------------    footer    --------------------*/
 .footer{
-	background:#f2f5da url(../img/foot_bg.jpg) no-repeat center top;
+	background:#f2f5da url(../img/foot_bg.jpg) no-repeat center top; 
 	padding: 40px 0;
 }
 	.foot_left{
