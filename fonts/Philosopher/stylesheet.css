@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Philosopher';
+    src: url('PhilosopherRegular.eot');
+    src: url('PhilosopherRegular.eot?#iefix') format('embedded-opentype'),
+         url('PhilosopherRegular.woff') format('woff'),
+         url('PhilosopherRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Philosopher Italic';
+    src: url('PhilosopherItalic.eot');
+    src: url('PhilosopherItalic.eot?#iefix') format('embedded-opentype'),
+         url('PhilosopherItalic.woff') format('woff'),
+         url('PhilosopherItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Philosopher Bold';
+    src: url('PhilosopherBold.eot');
+    src: url('PhilosopherBold.eot?#iefix') format('embedded-opentype'),
+         url('PhilosopherBold.woff') format('woff'),
+         url('PhilosopherBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Philosopher Bold Italic';
+    src: url('PhilosopherBoldItalic.eot');
+    src: url('PhilosopherBoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('PhilosopherBoldItalic.woff') format('woff'),
+         url('PhilosopherBoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
