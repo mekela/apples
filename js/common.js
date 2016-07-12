@@ -13,6 +13,14 @@ $(document).ready(function() {
 	  $( this ).next('ul').slideToggle('fast');
 	 }); 
 
+	//slider
+	$('.sert_slider ul').bxSlider({
+	  minSlides: 2,
+	  maxSlides: 4,
+	  slideWidth: 240,
+	  slideMargin: 35
+	});
+
 	// falling_sakura
 	if($(".falling_sakura").length) {
 		$('.falling_sakura').sakura({ 
