@@ -364,3 +364,175 @@
     }
   }
 }
+
+// New page
+
+.news-list {
+
+  .title {
+    padding: 0;
+  }
+}
+
+.news-block {
+  @include clr;
+
+  padding: 40px 0;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.news-img {
+  float: left;
+
+  img {
+    max-width: 510px;
+    height: auto;
+  }
+}
+
+.news-content {
+  margin-left: 544px;
+  padding-top: 10px;
+  font-size: 16px;
+
+  h3 {
+    font-weight: 500;
+  }
+}
+
+.news-date {
+  font-size: 16px;
+  color: #797979;
+}
+
+.news-text {
+  p {
+    width: 475px;
+    margin-bottom: 5px;
+    line-height: 22px;
+  }
+}
+
+.news-link {
+  a {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px dotted #f26611;
+    color: #f26611;
+  }
+}
+
+.pagination {
+  ul {
+    text-align: center;
+    font-size: 0;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: block;
+    width: 29px;
+    height: 29px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #f26611;
+  }
+
+  .active-page {
+    color: #f26611;
+    background: #fff;
+    border: 1px solid #f26611;
+  }
+}
+
+// End news page
+// =============
+// Price page
+
+.price-block {
+
+  table {
+    margin: 0 auto;
+    width: 670px;
+    border-collapse: collapse;
+    border: 2px solid  #bbcd21;
+
+    td,
+    th {
+      vertical-align: middle;
+      border: 1px solid rgba(187, 205, 33, .4);
+    }
+
+    th {
+      padding: 26px 5px 26px 20px;
+      text-align: left;
+    }
+  }
+  tr {
+    td:first-child {
+      width: 88px;
+      text-align: center;
+    }
+
+    td:nth-child(2) {
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    td:nth-child(3) {
+      width: 140px;
+      text-align: center;
+      color: #bbcd21;
+    }
+  }
+}
+
+.btn-container {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.download-pdf {
+  position: relative;
+  width: 220px;
+  padding-left: 70px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 58px;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #fb7321;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 26px;
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin-top: -17px;
+    background: url("../img/icon-pdf.png") center center no-repeat;
+  }
+}
+
+// End price page
