@@ -117,11 +117,13 @@
 }
 
 .fancybox-prev {
-	left: 0;
+	left: -60px;
+	background: url(../img/icons/fancy_arrow_l.png) no-repeat center left;
 }
 
 .fancybox-next {
-	right: 0;
+	right: -60px;
+	background: url(../img/icons/fancy_arrow_r.png) no-repeat center right;
 }
 
 .fancybox-nav span {
@@ -133,6 +135,7 @@
 	cursor: pointer;
 	z-index: 8040;
 	visibility: hidden;
+	background: none !important;
 }
 
 .fancybox-prev span {

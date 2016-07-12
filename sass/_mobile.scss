@@ -13,6 +13,23 @@
   			width: 100%;
   		}
   	}
+  .sert_slider .sert_slider_inner{
+  	width: auto;
+  	padding: 0 20px;
+  }
+  .form_outer{
+  	background: none;
+  	form{
+  		margin: 0 auto;
+  	}
+  }
+  .product_info .certificates a img{
+  	margin: 0 10px;
+  }
+  .section_404 img.text_404{
+  	max-width: 100%;
+  }
+
 }
 
 @include mq($max-width: 1000px) {
@@ -43,12 +60,23 @@
 	.news_item{
 		width: calc(49% - 23px);
 	}
+	.gallery_wrap .gallery_block a{
+		width: 33%;
+	}
+	.product_info .product_img{
+		float: none;
+		width: 100%;
+		img{
+			width: 100%;
+		}
+	}
 }
 
 @include mq($max-width: 768px) {
-	.content_txt img.float_left{
+	.content_txt img.float_left, .content_txt img.float_right{
 		float: none !important;
 		width: 100%;
+		margin: 0 0 20px 0;
 	}
 	.news_item{
 		width: calc(49% - 23px);
@@ -67,6 +95,7 @@
 			display: inline-block;
 			float: none;
 		}
+	
 }
 
 @include mq($max-width: 700px) {
@@ -94,8 +123,41 @@
 			}
 		}
 	}
+	.gallery_wrap .gallery_block a{
+		width: 49%;
+	}
+	.sort_item .text, .sort_item .img{
+		float: none;
+		width: 100%;
+	}
+		.sort_item .img{
+			img{
+				width: 100%;
+			}
+		}
 }
 
+@include mq($max-width: 600px) {
+	.contact_sections .item{
+		float: none;
+		width: 100%;
+	}
+	.form_outer form {
+		width: auto;
+		box-sizing: border-box;
+		padding: 40px 10px;
+		input, textarea{
+			width: 100% !important;
+			float: none !important;
+			
+		}
+		input[type="submit"]{
+			width: 70% !important;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}
 @include mq($max-width: 530px) {
 	.slogan{
 		padding-left: 0;
@@ -122,6 +184,9 @@
 		background:red;
 		background:#f2f5da;
 	}
+	.gallery_wrap .gallery_block a > img{
+		width: 100%;
+	}
 } 
 
 @include mq($max-width: 380px) {
@@ -131,5 +196,11 @@
 	}
 	.slogan{
 		width: auto;
+	}
+	.gallery_wrap .gallery_block a{
+		width: 100%;
+	}
+	.product_item{
+		width: 100%;
 	}
 }

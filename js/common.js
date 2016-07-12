@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 	//slider
 	$('.sert_slider ul').bxSlider({
-	  minSlides: 2,
+	  minSlides: 1,
 	  maxSlides: 4,
 	  slideWidth: 240,
 	  slideMargin: 35
