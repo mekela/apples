@@ -13,14 +13,6 @@ $(document).ready(function() {
 	  $( this ).next('ul').slideToggle('fast');
 	 }); 
 
-	//slider
-	$('.sert_slider ul').bxSlider({
-	  minSlides: 1,
-	  maxSlides: 4,
-	  slideWidth: 240,
-	  slideMargin: 35
-	});
-
 	// falling_sakura
 	if($(".falling_sakura").length) {
 		$('.falling_sakura').sakura({ 
@@ -33,6 +25,16 @@ $(document).ready(function() {
 			swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8'] // Swaying animation names
 		});
 	}	
+	
+	//slider
+	$('.sert_slider ul').bxSlider({
+	  minSlides: 1,
+	  maxSlides: 4,
+	  slideWidth: 240,
+	  slideMargin: 35
+	});
+
+	
 });
 
 	

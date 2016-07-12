@@ -1515,6 +1515,10 @@ header { position: relative; padding: 5px 0; }
 
 .content_txt { color: #363636; font-family: "PFDinDisplayPro Light"; padding-bottom: 15px; }
 
+.content_txt iframe { display: inline-block; max-width: 100%; }
+
+.content_txt .text_center { margin-bottom: 40px; display: block; }
+
 .content_txt img.float_left { margin: 10px 55px 30px 0; border: 2px solid #edd221; }
 
 .content_txt img.float_right { margin: 10px 0 30px 55px; border: 2px solid #edd221; }
@@ -1547,7 +1551,7 @@ header { position: relative; padding: 5px 0; }
 
 .news_item section { padding: 18px; padding-top: 0px; color: #363636; font-size: 16px; }
 
-.news_item section a { text-decoration: none; }
+.news_item section a { text-decoration: none; font-weight: bold; }
 
 .news_item section h6 { color: #363636; font-size: 20px; }
 
@@ -1558,6 +1562,8 @@ header { position: relative; padding: 5px 0; }
 .news_item section .more:hover a { border-bottom-color: transparent; }
 
 .news_item section .more a { border-bottom: 1px dotted #f26611; margin: 0 4px 0 0; }
+
+.date { color: #797979; display: block; }
 
 .all_news { text-align: center; padding-top: 10px; }
 
@@ -1737,6 +1743,10 @@ header { position: relative; padding: 5px 0; }
 .gallery_wrap .gallery_block a span em { font-style: normal; color: #363636; display: block; padding-top: 12px; font-size: 20px; }
 
 /*---------end-gallery----------------*/
+.contact_sections { overflow: hidden; }
+
+.map { text-align: center; width: auto; position: relative; overflow: hidden; box-sizing: border-box; }
+
 .container.no_margins { margin: 0; }
 
 .section_404 { min-height: 633px; background: url(../img/404_bg.png) left top no-repeat; color: #122539; }
@@ -1799,7 +1809,7 @@ header { position: relative; padding: 5px 0; }
 
 .contact_sections .item .title { color: #363636; font-size: 20px; font-weight: 500; text-transform: uppercase; font-family: PFDinDisplayPro Medium; padding-bottom: 20px; }
 
-.form_outer { background: url(../img/contact_form_bg.png) left top no-repeat; min-height: 449px; }
+.form_outer { background: url(../img/contact_form_bg.png) left top no-repeat; min-height: 449px; position: relative; overflow: hidden; }
 
 .form_outer form { width: 530px; height: 161px; margin-left: 345px; padding-top: 90px; }
 

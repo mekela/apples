@@ -158,6 +158,14 @@ header{
 		color: #363636;
 		font-family: $ffamily;
 		padding-bottom: 15px;
+		iframe{
+			display: inline-block;
+			max-width: 100%;
+		}
+		.text_center{
+			margin-bottom:40px;
+			display: block;
+		}
 		img.float_left{
 			margin: 10px 55px 30px 0;
 			border: 2px solid #edd221;
@@ -244,6 +252,7 @@ header{
 				font-size: 16px;
 				a{
 					text-decoration: none;
+					font-weight: bold;
 				}
 				h6{
 					color: #363636;
@@ -268,6 +277,10 @@ header{
 				}
 			}
 		}
+	.date{
+		color: #797979;
+		display: block;
+	}
 	.all_news{
 		text-align: center;
 		padding-top: 10px;
@@ -436,6 +449,7 @@ header{
 		&:nth-child(even){
 			background:#f1f1f1;
 		}
+
 	}
 }
 .sert_wrap{
@@ -703,3 +717,17 @@ header{
 }
 /*---------end-gallery----------------*/
 
+.contact_sections{
+	overflow: hidden;
+}
+
+.map{
+	text-align: center;
+	width: auto;
+	@include povh(''); 
+	box-sizing: border-box;
+}
+
+.form_outer{
+	@include povh('');
+}
