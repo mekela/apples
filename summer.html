@@ -15,6 +15,7 @@
 		<!-- END OF CSS -->
 		<!--SCRIPT -->
 			<script src="js/jquery-1.11.1.min.js"></script>
+			<script src="js/maskedinput.js"></script>
 			<script src="js/jquery.fancybox.pack.js"></script>
 			<script src="js/modernizr.custom.js"></script>
 			<script src="js/jquery-sakura.min.js"></script>
@@ -87,7 +88,7 @@
 			<div class="text">
 				<div class="sort_title">1. Мельба</div>
 				<p>Деревья у сорта мельбы среднерослые. После созревания плод приобретает насыщенно красный цвет, мякоть у него белая, сочная, кисло- сладкая с сильным ароматом. Собирать плоды можно уже в конце августа.</p>
-				<div class="price"><span><b>Цена:</b> от 1 800 руб.</span></div>
+				<a href="#" class="price"><span><b>Цена:</b> от 1 800 руб.</span></a>
 				<a href="" class="price-list">Прайс лист  </a> / <a href="" class="price-list">Сертификат  </a>
 			</div>
 		</div>
@@ -97,7 +98,7 @@
 				<div class="sort_title">2. Папировка</div>
 				<p>Мякоть у папировки белая, сочная, немного рыхлая, часто наливается, отличного сладко-кислого вкуса. Цвет самого фрукта может варьироваться от светло до темно желтого цвета, плоды у данного сорта средних размеров. Деревья папировки низкорослые с густой кроной. Созревают плоды к началу августа. Хранить их можно не больше трех недель.
 				</p>
-				<div class="price"><span><b>Цена:</b> от 1 800 руб.</span></div>
+				<a href="#" class="price"><span><b>Цена:</b> от 1 800 руб.</span></a>
 				<a href="" class="price-list">Прайс лист  </a> / <a href="" class="price-list">Сертификат  </a>
 			</div>
 		</div>
@@ -106,7 +107,7 @@
 			<div class="text">
 				<div class="sort_title">3. Груша московская</div>
 				<p>Деревья у грушовки московской довольно большие, а вот плоды наоборот – мелкие. Цвет у яблок розовый, иногда с легким румянцем. Мякоть у грушовки белая с желтоватым оттенком, рыхлая, сочная, имеет сильный аромат. На вкус яблоки кисло-сладкие. Собирают в конце августа, после чего они могут храниться от силы две недели.</p>
-				<div class="price"><span><b>Цена:</b> от 1 800 руб.</span></div>
+				<a href="#" class="price"><span><b>Цена:</b> от 1 800 руб.</span></a>
 				<a href="" class="price-list">Прайс лист  </a> / <a href="" class="price-list">Сертификат  </a>
 			</div>
 		</div>
@@ -115,7 +116,7 @@
 			<div class="text">
 				<div class="sort_title">4. Квинти</div>
 				<p>Квинти — типично летний сорт яблок, созревает в начале августа, а хранится не больше трех недель. Его среднерослые деревья имеют плоско-округлую форму кроны и отличаются средней зимостойкостью. Плоды округлые, средних размеров, желтоватые, украшены красно-розовым румянцем. Мякоть плода довольно плотная, сладко-кислого вкуса, кремовая.</p>
-				<div class="price"><span><b>Цена:</b> от 1 800 руб.</span></div>
+				<a href="#" class="price"><span><b>Цена:</b> от 1 800 руб.</span></a>
 				<a href="" class="price-list">Прайс лист  </a> / <a href="" class="price-list">Сертификат  </a>
 			</div>
 		</div>
@@ -155,24 +156,35 @@
 
 <div id="modal-window" class="modal">
 	<div class="form-box">
-		<form id="form1" onsubmit='return false' autocomplete="off">
-			<div class="form-title">Заголовок формы</div>
+		<form onsubmit='return false' autocomplete="off">
+			<div class="form-title">Заказать звонок</div>
 			<div class="form-body">
-				<input type="text" placeholder="Ваше имя" name="name" class="validate" title='Укажите ваше имя'>
-				<input type="tel" placeholder="Ваш телефон" name="phone" class="validate" title='Укажите ваш телефон'>
-				<input type="email" placeholder="Ваш E-mail" name="email" class="validate" title='Укажите ваш E-mail'>
-				<a class="a-button send-button" data-rel='form1'>Отправить</a>
+				<div class="form-input">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="error">! Введите номер в формате 8 (0--) --- -- --</div>
+				<div class="form-input error">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<input type="tel" placeholder="Ваш телефон" value="123">
+				</div>
+				<div class="form-btn">
+					<input type="submit" value="Заказать звонок" class="button"> <br>
+					<a href="#modal-success" class="fancybox">Thanks</a>
+				</div>
 			</div>
-			<input class="form-name" type="hidden" name="form-name" value="Отправить"/>
-			<input type="hidden" name="action" value='send-form'/>
-			<input type="hidden" name="action-type" value='form-message'/>
 		</form>
 	</div>
 </div>
-<div id="modal-success" class="modal">
+<div id="modal-success" class="modal thanks_modal">
 	<div class="form-box">
-		<div class="form-title">Спасибо за заявку!</div>
-		<p>Мы свяжемся с вами в ближайшее время.</p>
+		<div class="form_thanks">
+			Спасибо!
+		</div>
+		<div class="thanks_text">
+			<strong>Ваша заявка принята</strong>
+			Наш оператор свяжется с Вами в ближайшее время 
+		</div>
 	</div>
 </div>
 </div>
